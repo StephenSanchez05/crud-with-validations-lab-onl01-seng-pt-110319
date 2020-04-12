@@ -25,7 +25,7 @@ RSpec.describe SongsController, type: :controller do
 
     it "lists all songs" do
       get :index
-      expect(assigns(:songs)).to eq([song])
+      expect(assigns(:song)).to eq([song])
     end
 
     it "views a single song" do
